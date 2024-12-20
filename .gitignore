@@ -1,5 +1,6 @@
-.vscode
 **/dist
+
+.vscode
 
 **/__pycache__
 **/.venv
