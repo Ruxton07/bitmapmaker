@@ -69,5 +69,7 @@ class bitmapgui:
             for j in range(min(start_j, end_j), max(start_j, end_j) + 1):
                 self.toggle_button(i, j, toggle_range=True)
 
-# if __name__ == "__main__":
-#     GridMakerSubprocess(40, 40)
+if __name__ == "__main__":
+    n, m = input("Enter the dimensions of the grid (n, m) with a single space in between:").split()
+    n, m = int(n), int(m) if n.isdigit() and m.isdigit() else (10, 10)
+    bitmapgui.bitmapgui(int(n), int(m))
